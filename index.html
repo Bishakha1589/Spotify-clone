@@ -3,7 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/39da8831d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+    </style>
+    <title>Spotify Clone</title>
   </head>
-  <body></body>
+  <body class="fo">
+    <!-- Sidenav -->
+    <nav
+      id="sidenav-3"
+      class="left-0 relative top-0 z-[1035] h-screen w-60 -translate-x-full overflow-hidden bg-zinc-800 shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0"
+      data-te-sidenav-init
+      data-te-sidenav-hidden="false"
+      data-te-sidenav-color="white"
+    >
+      <ul
+        class=" list-none px-[0.2rem] font-semibold"
+        data-te-sidenav-menu-ref
+      >
+        <li class=" p-4">
+          <img src="logo.png" class="w-40" />
+        </li>
+        <li class="">
+          <a
+            class="flex h-12 cursor-pointer items-center rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-300 transition duration-300 ease-linear hover:bg-white/10 focus:bg-white/10 active:bg-white/10"
+            data-te-sidenav-link-ref
+          >
+            <span
+              class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+            >
+              <i
+                class="fa-solid fa-house fa-xl text-white-500"
+                class="text-white-500"
+              ></i>
+            </span>
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li class="">
+          <a
+            class="flex h-12 cursor-pointer items-center rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-300 transition duration-300 ease-linear hover:bg-white/10 focus:bg-white/10 active:bg-white/10"
+            data-te-sidenav-link-ref
+          >
+            <span
+              class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+            >
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </span>
+            <span>Search</span>
+          </a>
+        </li>
+
+        <li class="">
+          <a
+            class="flex h-12 cursor-pointer items-center rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-300 transition duration-300 ease-linear hover:bg-white/10 focus:bg-white/10 active:bg-white/10"
+            data-te-sidenav-link-ref
+          >
+            <span
+              class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+            >
+              <i class="fa-solid fa-lines-leaning fa-xl"></i>
+            </span>
+            <span>Your Library</span>
+          </a>
+        </li>
+        <li
+          class="text-gray-300 tracking-widest text-xs font-light ml-6 mt-4 mb-2"
+        >
+          PLAYLISTS
+        </li>
+        <li class="">
+          <a
+            class="flex h-12 cursor-pointer items-center rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-300 transition duration-300 ease-linear hover:bg-white/10 focus:bg-white/10 active:bg-white/10"
+            data-te-sidenav-link-ref
+          >
+            <span
+              class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+            >
+              <i class="fa-solid fa-square-plus fa-xl"></i>
+            </span>
+            <span>Create Playlists</span>
+          </a>
+        </li>
+        <li class="">
+          <a
+            class="flex h-12 cursor-pointer items-center rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-300 transition duration-300 ease-linear hover:bg-white/10 focus:bg-white/10 active:bg-white/10"
+            data-te-sidenav-link-ref
+          >
+            <span
+              class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+            >
+              <i class="fa-solid fa-heart fa-xl"></i>
+            </span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+        <!-- rearrange headers to fit the placement better -->
+        <section class="flex mt-9 mx-2 text-gray-300 text-xs font-light">
+          <!-- made this div full width -->
+          <div class="w-full ">
+            <!-- aligned items center vertically and used justify between -->
+            <ul class="flex items-center justify-between place-content-evenly">
+              <li class="">Legal</li>
+              <li class="">About Ads</li>
+              <!-- changed to capital case -->
+              <li class="">Privacy Policy</li>
+            </ul>
+            <ul class="flex items-center mt-3 justify-between">
+              <li class="">Cookies</li>
+              <li class="">Accessibility</li>
+              <li class="">Privacy Center</li>
+            </ul>
+          </div>
+        </section>
+        <!-- encapsulate this in a div to center it with the help of display properties, this allows you to skip using static margins -->
+        <div class="flex items-center justify-center mt-4">
+          <button
+            class="bg-transparent hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full border border-white"
+          >
+            <i class="fa-solid fa-globe"></i>
+            English
+          </button>
+        </div>
+      </ul>
+    </nav>
+  </body>
 </html>
